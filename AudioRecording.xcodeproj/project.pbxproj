@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED61281A2373D3F3000A9656 /* SiriWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6128152373D3F3000A9656 /* SiriWave.swift */; };
+		ED61281B2373D3F3000A9656 /* SupportLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6128172373D3F3000A9656 /* SupportLine.swift */; };
+		ED61281C2373D3F3000A9656 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6128182373D3F3000A9656 /* WaveView.swift */; };
+		ED61281D2373D3F3000A9656 /* SiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6128192373D3F3000A9656 /* SiriWaveView.swift */; };
 		EDC74E8323727873007074A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC74E8223727873007074A0 /* AppDelegate.swift */; };
 		EDC74E8523727873007074A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC74E8423727873007074A0 /* SceneDelegate.swift */; };
 		EDC74E8723727873007074A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC74E8623727873007074A0 /* ContentView.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED6128152373D3F3000A9656 /* SiriWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriWave.swift; sourceTree = "<group>"; };
+		ED6128172373D3F3000A9656 /* SupportLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportLine.swift; sourceTree = "<group>"; };
+		ED6128182373D3F3000A9656 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		ED6128192373D3F3000A9656 /* SiriWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriWaveView.swift; sourceTree = "<group>"; };
 		EDC74E7F23727873007074A0 /* AudioRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC74E8223727873007074A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC74E8423727873007074A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED6128132373D3F3000A9656 /* SiriWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				ED6128142373D3F3000A9656 /* Models */,
+				ED6128162373D3F3000A9656 /* Views */,
+			);
+			path = SiriWaveView;
+			sourceTree = "<group>";
+		};
+		ED6128142373D3F3000A9656 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED6128152373D3F3000A9656 /* SiriWave.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED6128162373D3F3000A9656 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED6128172373D3F3000A9656 /* SupportLine.swift */,
+				ED6128182373D3F3000A9656 /* WaveView.swift */,
+				ED6128192373D3F3000A9656 /* SiriWaveView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EDC74E7623727873007074A0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +112,7 @@
 				EDC74E8823727876007074A0 /* Assets.xcassets */,
 				EDC74E8D23727876007074A0 /* LaunchScreen.storyboard */,
 				EDC74E9023727876007074A0 /* Info.plist */,
+				ED6128132373D3F3000A9656 /* SiriWaveView */,
 				EDC74E8A23727876007074A0 /* Preview Content */,
 			);
 			path = AudioRecording;
@@ -161,12 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED61281C2373D3F3000A9656 /* WaveView.swift in Sources */,
 				EDC74E9923728718007074A0 /* RecordingList.swift in Sources */,
+				ED61281D2373D3F3000A9656 /* SiriWaveView.swift in Sources */,
 				EDC74E9D2372C51B007074A0 /* Helper.swift in Sources */,
+				ED61281A2373D3F3000A9656 /* SiriWave.swift in Sources */,
 				EDC74E8323727873007074A0 /* AppDelegate.swift in Sources */,
 				EDC74E9F2372C822007074A0 /* AudioPlayer.swift in Sources */,
 				EDC74E8523727873007074A0 /* SceneDelegate.swift in Sources */,
 				EDC74E9B237294B7007074A0 /* RecordingDataModel.swift in Sources */,
+				ED61281B2373D3F3000A9656 /* SupportLine.swift in Sources */,
 				EDC74E97237278EA007074A0 /* AudioRecorder.swift in Sources */,
 				EDC74E8723727873007074A0 /* ContentView.swift in Sources */,
 			);
