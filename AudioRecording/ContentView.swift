@@ -87,7 +87,7 @@ struct ContentView: View {
                 self.circleProgress += 0.01
             }
         }
-        
+        randomize()
         self.audioRecorder.startRecording()
     }
     
@@ -96,6 +96,7 @@ struct ContentView: View {
         
         circleProgress = 0.0
         
+        stop()
         self.audioRecorder.stopRecording()
     }
     
@@ -105,6 +106,7 @@ struct ContentView: View {
 
             let randomPower = Double.random(in: 0 ... 1.0)
             self.power = self.power == 0.0 ? randomPower : 0.0
+            print(randomPower)
 
         })
 
