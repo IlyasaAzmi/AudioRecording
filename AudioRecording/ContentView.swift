@@ -33,10 +33,11 @@ struct ContentView: View {
                             Color(red: (39 / 255), green: (203 / 255), blue: (232 / 255))
                         ])
                         .frame(height: 100, alignment: .leading)
-                        .background(Color(red: (28 / 255), green: (44 / 255), blue: (61 / 255)))
-                    Button(action: randomizeTimer == nil ? randomize : stop, label: {
-                        Text(randomizeTimer == nil ? "Randomize!" : "Stop")
-                    })
+//                        .background(Color(red: (28 / 255), green: (44 / 255), blue: (61 / 255)))
+                        .background(Color(.clear))
+//                    Button(action: randomizeTimer == nil ? randomize : stop, label: {
+//                        Text(randomizeTimer == nil ? "Randomize!" : "Stop")
+//                    })
                         .padding(.top, 50)
                 }
                 
