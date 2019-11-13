@@ -18,11 +18,20 @@ struct ContentView: View {
     @State var power = 0.0
     @State var randomizeTimer: Timer!
     
+    @ObservedObject var timerCount = TimerCount()
+//    @State var counter = 0
+
     var body: some View {
         NavigationView {
             VStack {
                 RecordingList(audioRecorder: audioRecorder)
                 Spacer()
+                
+                VStack {
+                    HStack {
+                        Text("\(self.timerCount.counter)")
+                    }.font(.subheadline)
+                }
                 
                 VStack {
                     SiriWaveView()
@@ -57,12 +66,13 @@ struct ContentView: View {
                     }
                 } else {
                     Button(action: {self.stopLoading()}) {
+
                         ZStack {
                             Circle()
-                            .trim(from: 0.0, to: circleProgress)
-                            .stroke(Color(#colorLiteral(red: 87/255, green: 189/255, blue: 115/255, alpha: 100/100)), lineWidth: 10)
-                            .frame(width: 100, height: 100)
-                            .rotationEffect(Angle(degrees: -90))
+                                .trim(from: 0.0, to: circleProgress)
+                                .stroke(Color(#colorLiteral(red: 87/255, green: 189/255, blue: 115/255, alpha: 100/100)), lineWidth: 10)
+                                .frame(width: 100, height: 100)
+                                .rotationEffect(Angle(degrees: -90))
                             Circle()
                                 .fill(Color(#colorLiteral(red: 0.2235294118, green: 0.1725490196, blue: 0.5098039216, alpha: 1)))
                                 .frame(width: 100)
@@ -81,43 +91,69 @@ struct ContentView: View {
         }
     }
     
+    
+    //Start Recording
     func startLoading() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
             withAnimation() {
-                print("pp", self.circleProgress)
                 self.circleProgress += 0.01
+                print("circle", self.circleProgress)
+                print("timer", timer)
+                
+                if (self.timerCount.counter == 5) {
+                    self.stopLoading()
+                    self.stopTimer()
+                }
             }
         }
+            
+        self.timerCount.start()
+        
         randomize()
         self.audioRecorder.startRecording()
     }
     
+    //Stop Recording
     func stopLoading() {
         timer?.invalidate()
         
         circleProgress = 0.0
         
-        stop()
+        stopRandomize()
+        
+        self.stopTimer()
+        
+        //Stop recording function
         self.audioRecorder.stopRecording()
     }
     
+    //Start Randomize Timer
     func randomize() {
-
         randomizeTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { _ in
-
             let randomPower = Double.random(in: 0 ... 1.0)
             self.power = self.power == 0.0 ? randomPower : 0.0
             print(randomPower)
-
         })
-
     }
 
-    func stop() {
-
+    //Stop Randomize Wave
+    func stopRandomize() {
         randomizeTimer.invalidate()
         randomizeTimer = nil
-
+    }
+    
+    func startTimer() {
+        timerCount.start()
+        if timerCount.counter == 5 {
+            self.stopLoading()
+            timerCount.stop()
+            timerCount.reset()
+        }
+    }
+    
+    func stopTimer() {
+        timerCount.stop()
+        timerCount.reset()
     }
 }
 

@@ -99,17 +99,6 @@ class AudioRecorder: NSObject, ObservableObject {
         fetchRecordings()
     }
     
-//    func startLoading() {
-//        _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
-//            withAnimation() {
-//                self.circleProgress += 0.01
-//                if self.circleProgress >= 1.0 {
-//                    timer.invalidate()
-//                }
-//            }
-//        }
-//    }
-    
 }
 
 extension Date {
@@ -119,3 +108,4 @@ extension Date {
         return dateFormatteer.string(from: self)
     }
 }
+
