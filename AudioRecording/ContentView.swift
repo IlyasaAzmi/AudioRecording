@@ -26,13 +26,6 @@ struct ContentView: View {
             VStack {
                 RecordingList(audioRecorder: audioRecorder)
                 Spacer()
-                
-                VStack {
-                    HStack {
-                        Text("\(self.timerCount.counter)")
-                    }.font(.subheadline)
-                }
-                
                 VStack {
                     SiriWaveView()
                         .power(power: power)
@@ -48,6 +41,12 @@ struct ContentView: View {
 //                        Text(randomizeTimer == nil ? "Randomize!" : "Stop")
 //                    })
                         .padding(.top, 50)
+                }
+                
+                VStack {
+                    HStack {
+                        Text("\(self.timerCount.counter)")
+                    }.font(.title)
                 }
                 
                 if audioRecorder.recording == false {
