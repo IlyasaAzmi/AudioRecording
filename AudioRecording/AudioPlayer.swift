@@ -49,6 +49,8 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         } catch {
             print("Playback Failed")
         }
+        
+        print(audio)
     }
     
     func stopPlayback() {

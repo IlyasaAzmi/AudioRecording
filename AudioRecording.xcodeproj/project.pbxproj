@@ -22,13 +22,6 @@
 		EDC74E9B237294B7007074A0 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC74E9A237294B7007074A0 /* RecordingDataModel.swift */; };
 		EDC74E9D2372C51B007074A0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC74E9C2372C51B007074A0 /* Helper.swift */; };
 		EDC74E9F2372C822007074A0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC74E9E2372C822007074A0 /* AudioPlayer.swift */; };
-		EDD92284237AB4EB008A0541 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD92283237AB4EB008A0541 /* TextView.swift */; };
-		EDD92288237ABD60008A0541 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD92287237ABD60008A0541 /* MapView.swift */; };
-		EDD92298237B339C008A0541 /* WavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD92297237B339C008A0541 /* WavesView.swift */; };
-		EDD9229B237B35CA008A0541 /* WaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD9229A237B35CA008A0541 /* WaveViewController.swift */; };
-		EDD9229D237B37DD008A0541 /* WaveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD9229C237B37DD008A0541 /* WaveControl.swift */; };
-		EDD922A1237B8F4F008A0541 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD922A0237B8F4F008A0541 /* MapViewController.swift */; };
-		EDD922A3237B8F9C008A0541 /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD922A2237B8F9C008A0541 /* MapSearchView.swift */; };
 		EDD922A5237BE7B1008A0541 /* TimerCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD922A4237BE7B1008A0541 /* TimerCount.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,14 +74,7 @@
 		EDC74E9A237294B7007074A0 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
 		EDC74E9C2372C51B007074A0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		EDC74E9E2372C822007074A0 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		EDD92283237AB4EB008A0541 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
-		EDD92287237ABD60008A0541 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EDD9228A237B3335008A0541 /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "../../../../Downloads/AudioKit-4.9/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
-		EDD92297237B339C008A0541 /* WavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesView.swift; sourceTree = "<group>"; };
-		EDD9229A237B35CA008A0541 /* WaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveViewController.swift; sourceTree = "<group>"; };
-		EDD9229C237B37DD008A0541 /* WaveControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveControl.swift; sourceTree = "<group>"; };
-		EDD922A0237B8F4F008A0541 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		EDD922A2237B8F9C008A0541 /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
 		EDD922A4237BE7B1008A0541 /* TimerCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,8 +144,6 @@
 				EDC74E9C2372C51B007074A0 /* Helper.swift */,
 				EDC74E9E2372C822007074A0 /* AudioPlayer.swift */,
 				EDD922A4237BE7B1008A0541 /* TimerCount.swift */,
-				EDD9229F237B8F38008A0541 /* Coba2 */,
-				EDD92299237B3584008A0541 /* Supporting Viewa */,
 				EDC74E8823727876007074A0 /* Assets.xcassets */,
 				EDC74E8D23727876007074A0 /* LaunchScreen.storyboard */,
 				EDC74E9023727876007074A0 /* Info.plist */,
@@ -185,27 +169,6 @@
 				EDD92292237B3336008A0541 /* AudioKitUI.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EDD92299237B3584008A0541 /* Supporting Viewa */ = {
-			isa = PBXGroup;
-			children = (
-				EDD92283237AB4EB008A0541 /* TextView.swift */,
-				EDD92287237ABD60008A0541 /* MapView.swift */,
-				EDD92297237B339C008A0541 /* WavesView.swift */,
-				EDD9229A237B35CA008A0541 /* WaveViewController.swift */,
-				EDD9229C237B37DD008A0541 /* WaveControl.swift */,
-			);
-			path = "Supporting Viewa";
-			sourceTree = "<group>";
-		};
-		EDD9229F237B8F38008A0541 /* Coba2 */ = {
-			isa = PBXGroup;
-			children = (
-				EDD922A0237B8F4F008A0541 /* MapViewController.swift */,
-				EDD922A2237B8F9C008A0541 /* MapSearchView.swift */,
-			);
-			path = Coba2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,24 +268,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED61281C2373D3F3000A9656 /* WaveView.swift in Sources */,
-				EDD92298237B339C008A0541 /* WavesView.swift in Sources */,
 				EDC74E9923728718007074A0 /* RecordingList.swift in Sources */,
 				ED61281D2373D3F3000A9656 /* SiriWaveView.swift in Sources */,
-				EDD92284237AB4EB008A0541 /* TextView.swift in Sources */,
-				EDD922A3237B8F9C008A0541 /* MapSearchView.swift in Sources */,
-				EDD9229B237B35CA008A0541 /* WaveViewController.swift in Sources */,
 				EDC74E9D2372C51B007074A0 /* Helper.swift in Sources */,
 				ED61281A2373D3F3000A9656 /* SiriWave.swift in Sources */,
 				EDC74E8323727873007074A0 /* AppDelegate.swift in Sources */,
-				EDD92288237ABD60008A0541 /* MapView.swift in Sources */,
 				EDC74E9F2372C822007074A0 /* AudioPlayer.swift in Sources */,
 				EDC74E8523727873007074A0 /* SceneDelegate.swift in Sources */,
 				EDD922A5237BE7B1008A0541 /* TimerCount.swift in Sources */,
 				EDC74E9B237294B7007074A0 /* RecordingDataModel.swift in Sources */,
-				EDD922A1237B8F4F008A0541 /* MapViewController.swift in Sources */,
 				ED61281B2373D3F3000A9656 /* SupportLine.swift in Sources */,
 				EDC74E97237278EA007074A0 /* AudioRecorder.swift in Sources */,
-				EDD9229D237B37DD008A0541 /* WaveControl.swift in Sources */,
 				EDC74E8723727873007074A0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

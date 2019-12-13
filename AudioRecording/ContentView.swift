@@ -19,7 +19,6 @@ struct ContentView: View {
     @State var randomizeTimer: Timer!
     
     @ObservedObject var timerCount = TimerCount()
-//    @State var counter = 0
 
     var body: some View {
         NavigationView {
@@ -99,9 +98,10 @@ struct ContentView: View {
                 print("circle", self.circleProgress)
                 print("timer", timer)
                 
-                if (self.timerCount.counter == 5) {
+                if (self.timerCount.counter == 5.5) {
                     self.stopLoading()
                     self.stopTimer()
+                    print("timercount", self.timerCount.counter)
                 }
             }
         }

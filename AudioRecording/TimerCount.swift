@@ -12,15 +12,16 @@ import Combine
 
 // 1.
 class TimerCount: ObservableObject {
+    
     // 2.
-    @Published var counter: Int = 0
+    @Published var counter: Double = 0.0
     
     var timer = Timer()
     
     // 3.
     func start() {
-        self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            self.counter += 1
+        self.timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            self.counter += 0.5
         }
     }
     
